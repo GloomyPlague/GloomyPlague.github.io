@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admiral's Portfolio</title>
+    <title>Carlo Ortiz Luis' Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Admiral's Portfolio</h1>
+    <header class="fade-in">
+        <h1>Carlo Ortiz Luis' Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -19,30 +19,61 @@
     </header>
 
     <main>
-        <section id="about">
+        <section id="about" class="fade-in">
             <h2>About Me</h2>
             <img src="images/profile.jpg" alt="Admiral's Profile Picture" class="profile-pic">
-            <p>Welcome! I am Admiral, a passionate developer with expertise in C#, history, science, and more. I love creating efficient and effective software solutions.</p>
+            <p>Welcome! I am Carlo, a passionate developer with expertise in Java, C#, HTML, Javascript and CSS. I love creating efficient and effective software solutions.</p>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="fade-in">
             <h2>Projects</h2>
-            <div class="project">
+
+            <div class="project" onclick="openModal('project1')">
                 <h3>Task Manager</h3>
                 <img src="images/project1.jpg" alt="Task Manager Project" class="project-pic">
-                <p>A terminal-based task management system built with C# and SQLite.</p>
+                <p>A terminal-based task management system built with C#.</p>
+            </div>
+
+            <div class="project" onclick="openModal('project2')">
+                <h3>MITO</h3>
+                <img src="images/project2.jpg" alt="Game" class="project-pic">
+                <p>A top-down action-adventure game programmed in C# using Unity 3D game engine.</p>
             </div>
             <!-- Add more projects as needed -->
         </section>
 
-        <section id="contact">
+        <section id="contact" class="fade-in">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:admiral@example.com">admiral@example.com</a></p>
+            <p>Email: <a href="mailto:Carlo.OrtizLuis@gmail.com">Carlo.OrtizLuis@gmail.com</a></p>
         </section>
     </main>
 
-    <footer>
+    <footer class="fade-in">
         <p>&copy; 2024 Admiral's Portfolio</p>
     </footer>
+
+    <!-- Modal -->
+    <div id="project1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project1')">&times;</span>
+            <h2>Task Manager</h2>
+            <img src="images/project1.jpg" alt="Task Manager Project" class="modal-img">
+            <p>This project uses C# manage tasks efficiently.</p>
+        </div>
+    </div>
+
+    <div id="project2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project2')">&times;</span>
+            <h2>MITO</h2>
+            <img src="images\mito1.jpg" alt="MITO" class="modal-img">
+            <p>An immersive top-down action-adventure game developed in Unity 3D, using C# as the primary programming language, demonstrating A* pathfinding for thesis project.</p>
+            <img src="images\mito2.jpg" alt="MITO" class="modal-img">
+            <img src="images\mito3.jpg" alt="MITO" class="modal-img">
+            <img src="images\mito4.jpg" alt="MITO" class="modal-img">
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
