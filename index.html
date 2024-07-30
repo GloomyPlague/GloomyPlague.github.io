@@ -22,7 +22,7 @@
         <section id="about" class="fade-in">
             <h2>About Me</h2>
             <img src="images/profile.jpg" alt="Admiral's Profile Picture" class="profile-pic">
-            <p>Welcome! I am Carlo, a passionate developer with expertise in Java, C#, HTML, Javascript and CSS. I love creating efficient and effective software solutions.</p>
+            <p>Welcome! I am Carlo, a passionate developer and artist with expertise in Blender, Java, C#, HTML, Javascript and CSS. I love creating art and efficient software.</p>
         </section>
 
         <section id="projects" class="fade-in">
@@ -48,9 +48,45 @@
             <!-- Add more projects as needed -->
         </section>
 
+        <section id="Art projects" class="fade-in">
+            <h2>Art Projects</h2>
+
+            <div class="project" onclick="openModal('artproject1')">
+                <h3></h3>
+                <video src="images/artproject1.mp4" alt="Task Manager Project" class="artproject-pic">
+                <p></p>
+            </div>
+
+            <div class="project" onclick="openModal('artproject2')">
+                <h3></h3>
+                <video src="images/artproject2.mp4" alt="Game" class="artproject-pic">
+                <p></p>
+            </div>
+
+            <div class="project" onclick="openModal('artproject3')">
+                <h3></h3>
+                <video src="images/artproject3.mp4" alt="Inventory Management System" class="artproject-pic">
+                <p></p>
+            </div>
+
+            <div class="project" onclick="openModal('artproject4')">
+                <h3></h3>
+                <img src="images/artproject4.gif" alt="Inventory Management System" class="artproject-pic">
+                <p></p>
+            </div>
+
+            <div class="project" onclick="openModal('artproject5')">
+                <h3></h3>
+                <img src="images/artproject5.jpg" alt="Inventory Management System" class="artproject-pic">
+                <p></p>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+
         <section id="contact" class="fade-in">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:Carlo.OrtizLuis@gmail.com">Carlo.OrtizLuis@gmail.com</a></p>
+            <p>Phone Number: (+63)9694734518</p>
         </section>
     </main>
 
@@ -87,6 +123,44 @@
             <p>Inventory Management System This is a simple Windows Forms application written in C#. The purpose of the application is to manage an inventory of items. It allows users to add, update, and delete items in the inventory. Each item in the inventory has an ID, name, quantity, and price.</p>
             <img src="images\ims1.jpg" alt="Inventory Management System" class="modal-img">
             <img src="images\project3.jpg" alt="Inventory Management System" class="modal-img">
+        </div>
+    </div>
+
+        <!-- ART PROJECTS MODAL -->
+
+    <div id="artproject1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project1')">&times;</span>
+            <video controls src="images/artproject1.mp4" alt="Task Manager Project" class="modal-img">
+        </div>
+    </div>
+
+    <div id="artproject2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project2')">&times;</span>
+            <video controls src="images\artproject2.mp4" alt="MITO" class="modal-img">
+            <p>An immersive top-down action-adventure game developed in Unity 3D, using C# as the primary programming language, demonstrating A* pathfinding for thesis project.</p>
+        </div>
+    </div>
+
+    <div id="artproject3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project3')">&times;</span>
+            <video controls src="images\artproject3.mp4" alt="Inventory Management System" class="modal-img">
+        </div>
+    </div>
+
+    <div id="artproject4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project3')">&times;</span>
+            <img src="images\artproject4.gif" alt="Inventory Management System" class="modal-img">
+        </div>
+    </div>
+
+    <div id="artproject5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project3')">&times;</span>
+            <img src="images\artproject5.jpg" alt="Inventory Management System" class="modal-img">
         </div>
     </div>
 

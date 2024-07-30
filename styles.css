@@ -64,9 +64,16 @@ section {
     max-width: 10%;
     height: auto;
 }
+.artproject-pic{
+    max-width: 25%;
+    height: auto;
+}
 .modal-img {
     width: 50%;
     max-height: auto;
+    object-fit: cover;
+}
+.modal-vid {
     object-fit: cover;
 }
 .modal-content {
