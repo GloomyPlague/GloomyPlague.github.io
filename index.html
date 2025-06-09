@@ -29,24 +29,36 @@
             <h2>Projects</h2>
 
             <div class="project" onclick="openModal('project1')">
+                <h3>Dantan Wire Sorting System</h3>
+                <img src="images/dantan.jpg" alt="Dantan Wire Sorting System" class="project-pic">
+                <p>A wire sorting system written in C# and SQL I developed for International Wiring Systems that is currently deployed in production. It sorts splicing, welding, end crimping, and twisting wires. These wires are sorted before being assembled to a complete car harness..</p>
+            </div>
+
+            <div class="project" onclick="openModal('project2')">
+                <h3>Assembly Control System ID</h3>
+                <img src="images/acsid.jpg" alt="Assembly Control System ID" class="project-pic">
+                <p>A system I developed written in C# and SQL for International Wiring Systems and currently deployed in production for printing IDs of licensed wire assembly workers being used as their official passcode before assembling wire harnesses.</p>
+            </div>
+            
+            <div class="project" onclick="openModal('project3')">
                 <h3>Task Manager</h3>
                 <img src="images/project1.jpg" alt="Task Manager Project" class="project-pic">
                 <p>A terminal-based task management system built with C#.</p>
             </div>
 
-            <div class="project" onclick="openModal('project2')">
+            <div class="project" onclick="openModal('project4')">
                 <h3>MITO</h3>
                 <img src="images/project2.jpg" alt="Game" class="project-pic">
                 <p>A top-down action-adventure game programmed in C# using Unity 3D game engine.</p>
             </div>
 
-            <div class="project" onclick="openModal('project3')">
+            <div class="project" onclick="openModal('project5')">
                 <h3>Inventory Management system</h3>
                 <img src="images/project3.jpg" alt="Inventory Management System" class="project-pic">
                 <p>Inventory Management System This is a simple Windows Forms application written in C#.</p>
             </div>
 
-            <div class="project" onclick="openModal('project4')">
+            <div class="project" onclick="openModal('project6')">
                 <h3>Tic Tac Toe Game</h3>
                 <img src="images/project4.jpg" alt="Tic Tac Toe Game" class="project-pic">
                 <p>A simple tic tac toe game written in C# using .NET Winforms framework. The game features a basic gameplay. 'X' for the player and 'O' for the AI.</p>
@@ -104,13 +116,31 @@
     <div id="project1" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('project1')">&times;</span>
+            <h2>Dantan</h2>
+            <img src="images/dantan.jpg" alt="Dantan Wire Sorting System" class="modal-img">
+            <p>A basic terminal-based program that is written in C# to manage tasks efficiently.</p>
+        </div>
+    </div>
+
+    <div id="project2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project2')">&times;</span>
+            <h2>Task Manager</h2>
+            <img src="images/acsid.jpg" alt="Assembly Control System ID" class="modal-img">
+            <p>A basic terminal-based program that is written in C# to manage tasks efficiently.</p>
+        </div>
+    </div>
+    
+    <div id="project3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project1')">&times;</span>
             <h2>Task Manager</h2>
             <img src="images/project1.jpg" alt="Task Manager Project" class="modal-img">
             <p>A basic terminal-based program that is written in C# to manage tasks efficiently.</p>
         </div>
     </div>
 
-    <div id="project2" class="modal">
+    <div id="project4" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('project2')">&times;</span>
             <h2>MITO</h2>
@@ -122,7 +152,7 @@
         </div>
     </div>
 
-    <div id="project3" class="modal">
+    <div id="project5" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('project3')">&times;</span>
             <h2>Inventory Management System</h2>
@@ -133,7 +163,7 @@
         </div>
     </div>
 
-    <div id="project4" class="modal">
+    <div id="project6" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('project3')">&times;</span>
             <h2>Tic Tac Toe</h2>
